@@ -1,27 +1,316 @@
-extends layout
-
-block content
-  h1 Hackathon Starter
-  p.lead A boilerplate for Node.js web applications.
-  hr
-  .row
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+doctype html
+//
+  Strongly Typed by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
+  link(rel='stylesheet' href='css/main.css')
+#page-wrapper
+  // Header
+  section#header
+    .container
+      // Logo
+      h1#logo
+        a(href='index.html') StartupBus
+      p Creating technology for social good
+      // Nav
+      nav#nav
+        ul
+          li
+            a.icon.solid.fa-home(href='index.html')
+              span Introduction
+          li
+            a.icon.fa-chart-bar(href='#')
+              span Dropdown
+            ul
+              li
+                a(href='#') Lorem ipsum dolor
+              li
+                a(href='#') Magna phasellus
+              li
+                a(href='#') Etiam dolore nisl
+              li
+                a(href='#') Phasellus consequat
+                ul
+                  li
+                    a(href='#') Magna phasellus
+                  li
+                    a(href='#') Etiam dolore nisl
+                  li
+                    a(href='#') Phasellus consequat
+              li
+                a(href='#') Veroeros feugiat
+          li
+            a.icon.solid.fa-cog(href='left-sidebar.html')
+              span Left Sidebar
+          li
+            a.icon.solid.fa-retweet(href='right-sidebar.html')
+              span Right Sidebar
+          li
+            a.icon.solid.fa-sitemap(href='no-sidebar.html')
+              span No Sidebar
+  // Features
+  section#features
+    .container
+      header
+        h2
+          | ____
+          | 
+      .row.aln-center
+        .col-4.col-6-medium.col-12-small
+          // Feature
+          section
+            a.image.featured(href='#')
+              // img(src='images/pic01.jpg' alt='')
+            header
+              h3 Idea1
+            p
+              | This is 
+              strong Strongly Typed
+              | , a free, fully responsive site template
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;by 
+              a(href='http://html5up.net') HTML5 UP
+              | . Free for personal and commercial use under the
+              a(href='http://html5up.net/license') CCA 3.0 license
+              | .
+        .col-4.col-6-medium.col-12-small
+          // Feature
+          section
+            a.image.featured(href='#')
+              // img(src='images/pic02.jpg' alt='')
+            header
+              h3 Idea2
+            p
+              a(href='http://html5up.net') HTML5 UP
+              |  is a side project of 
+              a(href='http://twitter.com/ajlkn') AJ&rsquo;s
+              |  (= me).
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;I started it as a way to both test my responsive tools and sharpen up my coding
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and design skills a bit.
+        .col-4.col-6-medium.col-12-small
+          // Feature
+          section
+            a.image.featured(href='#')
+              img(src='images/pic03.jpg' alt='')
+            header
+              h3 What&apos;s this built with?
+            p
+              strong Responsive Tools
+              |  is a simple set of tools for building responsive
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;sites and apps. All of my templates at 
+              a(href='http://html5up.net') HTML5 UP
+              |  are built using these tools.
+        .col-12
+          ul.actions
+            li
+              a.button.icon.solid.fa-file(href='#') Tell Me More
+  // Banner
+  section#banner
+    .container
       p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
+        | Use this space for 
+        strong profound thoughts
+        | .
+        br
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Or an enormous ad. Whatever.
+  // Main
+  section#main
+    .container
+      .row
+        // Content
+        #content.col-8.col-12-medium
+          // Post
+          article.box.post
+            header
+              h2
+                a(href='#')
+                  | I don&rsquo;t want to say 
+                  strong it&rsquo;s the aliens
+                  |  ...
+                  br
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;but it&rsquo;s the aliens.
+            a.image.featured(href='#')
+              img(src='images/pic04.jpg' alt='')
+            h3 I mean isn&apos;t it possible?
+            p
+              | Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
+              | ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
+              | sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
+              | in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
+              | magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
+              | consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
+              | justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
+              | mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
+              | Curabitur leo nibh, rutrum eu malesuada in tristique.
+            ul.actions
+              li
+                a.button.icon.solid.fa-file(href='#') Continue Reading
+          // Post
+          article.box.post
+            header
+              h2
+                a(href='#')
+                  | By the way, many thanks to 
+                  strong regularjane
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;for these awesome demo photos
+            a.image.featured(href='#')
+              img(src='images/pic05.jpg' alt='')
+            h3 You should probably check out her work
+            p
+              | Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
+              | ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
+              | sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
+              | in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
+              | consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
+              | in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
+              | magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
+              | consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
+              | justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
+              | mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
+              | Curabitur leo nibh, rutrum malesuada.
+            p
+              | Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
+              | Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
+              | vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
+              | magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
+              | tristique at erat. Curabitur leo nibh, rutrum eu malesuada in, tristique
+              | at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
+              | tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
+              | magna tempus.
+            ul.actions
+              li
+                a.button.icon.solid.fa-file(href='#') Continue Reading
+        // Sidebar
+        #sidebar.col-4.col-12-medium
+          // Excerpts
+          section
+            ul.divided
+              li
+                // Excerpt
+                article.box.excerpt
+                  header
+                    span.date July 30
+                    h3
+                      a(href='#') Just another post
+                  p
+                    | Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
+                    | suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.
+              li
+                // Excerpt
+                article.box.excerpt
+                  header
+                    span.date July 28
+                    h3
+                      a(href='#') And another post
+                  p
+                    | Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
+                    | suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.
+              li
+                // Excerpt
+                article.box.excerpt
+                  header
+                    span.date July 24
+                    h3
+                      a(href='#') One more post
+                  p
+                    | Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
+                    | suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.
+          // Highlights
+          section
+            ul.divided
+              li
+                // Highlight
+                article.box.highlight
+                  header
+                    h3
+                      a(href='#') Something of note
+                  a.image.left(href='#')
+                    img(src='images/pic06.jpg' alt='')
+                  p
+                    | Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
+                    | viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
+                    | convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
+                    | facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.
+                  ul.actions
+                    li
+                      a.button.icon.solid.fa-file(href='#') Learn More
+              li
+                // Highlight
+                article.box.highlight
+                  header
+                    h3
+                      a(href='#') Something of less note
+                  a.image.left(href='#')
+                    img(src='images/pic07.jpg' alt='')
+                  p
+                    | Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
+                    | viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
+                    | convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
+                    | facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.
+                  ul.actions
+                    li
+                      a.button.icon.solid.fa-file(href='#') Learn More
+  // Footer
+  section#footer
+    .container
+      header
+        h2
+          | Questions or comments? 
+          strong Get in touch:
+      .row
+        .col-6.col-12-medium
+          section
+            form(method='post' action='#')
+              .row.gtr-50
+                .col-6.col-12-small
+                  input(name='name' placeholder='Name' type='text')
+                .col-6.col-12-small
+                  input(name='email' placeholder='Email' type='text')
+                .col-12
+                  textarea(name='message' placeholder='Message')
+                .col-12
+                  a.form-button-submit.button.icon.solid.fa-envelope(href='#') Send Message
+        .col-6.col-12-medium
+          section
+            p
+              | Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
+              | mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
+              | leo nibh, rutrum eu malesuada.
+            .row
+              .col-6.col-12-small
+                ul.icons
+                  li.icon.solid.fa-home
+                    | 1234 Somewhere Road
+                    br
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Nashville, TN 00000
+                    br
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;USA
+                  li.icon.solid.fa-phone
+                    | (000) 000-0000
+                  li.icon.solid.fa-envelope
+                    a(href='#') info@untitled.tld
+              .col-6.col-12-small
+                ul.icons
+                  li.icon.brands.fa-twitter
+                    a(href='#') @untitled
+                  li.icon.brands.fa-instagram
+                    a(href='#') instagram.com/untitled
+                  li.icon.brands.fa-dribbble
+                    a(href='#') dribbble.com/untitled
+                  li.icon.brands.fa-facebook-f
+                    a(href='#') facebook.com/untitled
+    #copyright.container
+      ul.links
+        li &copy; Untitled. All rights reserved.
+        li
+          | Design: 
+          a(href='http://html5up.net') HTML5 UP
+// Scripts
+script(src='js/jquery.min.js')
+script(src='js/jquery.dropotron.min.js')
+script(src='js/browser.min.js')
+script(src='js/breakpoints.min.js')
+script(src='js/util.js')
+script(src='js/main.js')
