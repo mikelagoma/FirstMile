@@ -1,8 +1,64 @@
-footer
-  .container.text-center
-    p.float-left © 2019 Company, Inc. All Rights Reserved
-    ul.float-right.list-inline
-      li.list-inline-item
-        a(href='https://github.com/sahat/hackathon-starter') GitHub Project
-      li.list-inline-item
-        a(href='https://github.com/sahat/hackathon-starter/issues') Issues
+// footer
+//   .container.text-center
+//     p.float-left © 2019 Company, Inc. All Rights Reserved
+//     ul.float-right.list-inline
+//       li.list-inline-item
+//         a(href='https://github.com/sahat/hackathon-starter') GitHub Project
+//       li.list-inline-item
+//         a(href='https://github.com/sahat/hackathon-starter/issues') Issues
+
+// Footer
+section#footer
+.container
+  header
+    h2
+      | Questions or comments? 
+      strong Get in touch:
+  .row
+    .col-6.col-12-medium
+      section
+        form(method='post' action='#')
+          .row.gtr-50
+            .col-6.col-12-small
+              input(name='name' placeholder='Name' type='text')
+            .col-6.col-12-small
+              input(name='email' placeholder='Email' type='text')
+            .col-12
+              textarea(name='message' placeholder='Message')
+            .col-12
+              a.form-button-submit.button.icon.solid.fa-envelope(href='#') Send Message
+    .col-6.col-12-medium
+      section
+        p
+          | Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
+          | mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
+          | leo nibh, rutrum eu malesuada.
+        .row
+          .col-6.col-12-small
+            ul.icons
+              li.icon.solid.fa-home
+                | 1234 Somewhere Road
+                br
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Nashville, TN 00000
+                br
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;USA
+              li.icon.solid.fa-phone
+                | (000) 000-0000
+              li.icon.solid.fa-envelope
+                a(href='#') info@untitled.tld
+          .col-6.col-12-small
+            ul.icons
+              li.icon.brands.fa-twitter
+                a(href='#') @untitled
+              li.icon.brands.fa-instagram
+                a(href='#') instagram.com/untitled
+              li.icon.brands.fa-dribbble
+                a(href='#') dribbble.com/untitled
+              li.icon.brands.fa-facebook-f
+                a(href='#') facebook.com/untitled
+#copyright.container
+  ul.links
+    li &copy; Untitled. All rights reserved.
+    li
+      | Design: 
+      a(href='http://html5up.net') HTML5 UP
