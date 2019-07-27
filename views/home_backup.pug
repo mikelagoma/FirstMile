@@ -1,27 +1,58 @@
-extends layout
+extends layout_backup
 
 block content
-  h1 Hackathon Starter
-  p.lead A boilerplate for Node.js web applications.
+  p.lead Rent the outdoor gear you don't use.
   hr
+  form(action='/s', method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='name') Where
+      .col-md-7
+        input.form-control(type='text', name='location', id='location', placeholder='Lake Tahoe', autocomplete='location')
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='from') Rent Date
+      .col-md-7
+        input.form-control(type='date', name='start', id='start', placeholder='mm/dd/yy', autocomplete='mm/dd/yy')
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='from') Return Date
+      .col-md-7
+        input.form-control(type='date', name='end', id='end', placeholder='mm/dd/yy', autocomplete='mm/dd/yy')
+    // .form-group.row
+    //   label.col-md-3.col-form-label.font-weight-bold.text-right Gender
+    //   .col-sm-6
+    //     .form-check.form-check-inline
+    //       input(type='radio', class='form-check-input' checked=user.profile.gender == 'male', name='gender', value='male', data-toggle='radio')
+    //       label.form-check-label Male
+
+    //     .form-check.form-check-inline
+    //       input(type='radio', class='form-check-input' checked=user.profile.gender == 'female', name='gender', value='female', data-toggle='radio')
+    //       label.form-check-label Female
+
+    //     .form-check.form-check-inline
+    //       input(type='radio', class='form-check-input' checked=user.profile.gender == 'other', name='gender', value='other', data-toggle='radio')
+    //       label.form-check-label Other
   .row
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
+    ul.actions
+      li
+        a.button.icon.solid.fa-file(href='s') Search
+    // foreach
+    // .col-md-6
+    //   h2 Heading
+    //   p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    //   p
+    //     a.btn.btn-raised(href='#', role='button') View details »
+    // .col-md-6
+    //   h2 Heading
+    //   p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    //   p
+    //     a.btn.btn-raised(href='#', role='button') View details »
+    // .col-md-6
+    //   h2 Heading
+    //   p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    //   p
+    //     a.btn.btn-raised(href='#', role='button') View details »
+    // .col-md-6
+    //   h2 Heading
+    //   p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    //   p
+    //     a.btn.btn-raised(href='#', role='button') View details »
