@@ -31,10 +31,11 @@ block content
     //     .form-check.form-check-inline
     //       input(type='radio', class='form-check-input' checked=user.profile.gender == 'other', name='gender', value='other', data-toggle='radio')
     //       label.form-check-label Other
-  .row
-    ul.actions
-      li
-        a.button.icon.solid.fa-file(href='s') Search
+    .form-group.row
+      ul.actions
+        label.col-md-3.col-form-label.font-weight-bold.text-right(for='submit')
+        .col-md-7
+          a.btn.btn-raised-file(href='s') Search
     // foreach
     // .col-md-6
     //   h2 Heading
