@@ -100,9 +100,9 @@ Products[5].description = "Come rent out a wonderful experience!\
 -9.8 Tohatsu 4 Stroke\
 -Includes Trailer"
 
-Products[0].price = 80
-Products[1].price = 20
-Products[2].price = 60
-Products[3].price = 40
-Products[4].price = 130
-Products[5].price = 80
+Products[0].price = 40
+Products[1].price = 10
+Products[2].price = 30
+Products[3].price = 20
+Products[4].price = 65
+Products[5].price = 40
