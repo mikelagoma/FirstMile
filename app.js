@@ -127,7 +127,10 @@ app.use('/webfonts', express.static(path.join(__dirname, 'node_modules/@fortawes
  * Primary app routes.
  */
 app.get('/', homeController.index);
-app.get('/s', productController.search)
+app.get('/s', productController.getSearch);
+app.post('/s', productController.postSearch);
+app.get('/product/:id', productController.getProduct);
+app.post('/product/:id', productController.postProduct);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);

@@ -6,34 +6,10 @@ block content
     for product in products
       .col-md-6
         h3= product.title
-        //product.image
-        p= product.description
+        img(src=product.image)
+        // p= product.image
         p
-          a.btn.btn-raised(href='#', role='button') View details »
+          a.btn.btn-raised(href='/product/' + product.id, role='button') View details »
     else
       p No products found    
 
-  // form(action='/account/profile', method='POST')
-  //   input(type='hidden', name='_csrf', value=_csrf)
-  //   .form-group.row
-  //     label.col-md-3.col-form-label.font-weight-bold.text-right(for='email') Email
-  //     .col-md-7
-  //       input.form-control(type='email', name='email', id='email', value=user.email, autocomplete='email')
-  //   .form-group.row
-  //     label.col-md-3.col-form-label.font-weight-bold.text-right(for='name') Name
-  //     .col-md-7
-  //       input.form-control(type='text', name='name', id='name', value=user.profile.name, autocomplete='name')
-  //   .form-group.row
-  //     label.col-md-3.col-form-label.font-weight-bold.text-right Gender
-  //     .col-sm-6
-  //       .form-check.form-check-inline
-  //         input(type='radio', class='form-check-input' checked=user.profile.gender == 'male', name='gender', value='male', data-toggle='radio')
-  //         label.form-check-label Male
-
-  //       .form-check.form-check-inline
-  //         input(type='radio', class='form-check-input' checked=user.profile.gender == 'female', name='gender', value='female', data-toggle='radio')
-  //         label.form-check-label Female
-
-  //       .form-check.form-check-inline
-  //         input(type='radio', class='form-check-input' checked=user.profile.gender == 'other', name='gender', value='other', data-toggle='radio')
-  //         label.form-check-label Other
