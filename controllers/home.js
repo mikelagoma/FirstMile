@@ -1,3 +1,5 @@
+const Equipment = require('../models/Equipment');
+
 /**
  * GET /
  * Home page.

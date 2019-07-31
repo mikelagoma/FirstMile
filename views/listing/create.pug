@@ -2,17 +2,21 @@ extends ../layout_backup
 
 block content
   .pb-2.mt-2.mb-4.border-bottom
-    h3 Sign up
+    h3 Creat listing
   form(id='post-equipment', method='POST')
     input(type='hidden', name='_csrf', value=_csrf)
     .form-group.row
-      label.col-md-3.col-form-label.font-weight-bold.text-right(for='email') Email
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='title') Title
       .col-md-7
-        input.form-control(type='email', name='email', id='email', placeholder='Email', autofocus, autocomplete='email', required)
+        input.form-control(type='text', name='title', id='title', placeholder='Title', autofocus, autocomplete='title', required)
     .form-group.row
-      label.col-md-3.col-form-label.font-weight-bold.text-right(for='email') Email
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='description') Description
       .col-md-7
-        input.form-control(type='text', name='location', id='location', placeholder='Location', autofocus, autocomplete='location', required)
+        input.form-control(type='text', name='description', id='description', placeholder='Description', autofocus, autocomplete='description', required)
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='image') Picture
+      .col-md-7
+        .form-control-file(type='file', name='image', id='image')
     .form-group.row
       label.col-md-3.col-form-label.font-weight-bold.text-right(for='password') Password
       .col-md-7
@@ -24,4 +28,4 @@ block content
     .form-group.offset-sm-3.col-md-7.pl-2
       button.btn.btn-success(type='submit')
         i.fas.fa-user-plus.fa-sm
-        | Signup
+        | Post

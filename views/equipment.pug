@@ -2,22 +2,20 @@ extends layout_backup
 
 block content
   .pb-2.mt-2.mb-4.border-bottom
-    // h3 
-    // for product in products
     .col-md-6
-      h3= product.title
-      img(src='../' + product.image)
-      p= product.description
+      h3= equipmentItem.data.title
+      img(src=equipmentItem.data.image)
+      p= equipmentItem.data.description
       p
         // a.btn.btn-adn(href='#', role='button') R
         // a.btn.btn-adn(href='#', role='button') Rent
     .form-group.row
-      h3= 'Price: $' + product.price + '/day'
+      h3= 'Price: $' + equipmentItem.data.price + '/day'
       // ul.actions
       label.col-md-3.col-form-label.font-weight-bold.text-right(for='submit')
       // .col-md-7
-      a.btn.btn-adn(href='../s' role='button') Contact Owner
-      a.btn.btn-adn(href='../s' role='button') Rent
+      a.btn.btn-adn(href='../contact' role='button') Contact Owner
+      a.btn.btn-adn(href='../s/all' role='button') Rent
     // else
-    //   p No products found    
+    //   p No equipmentItem.datas found    
 

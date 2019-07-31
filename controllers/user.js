@@ -71,9 +71,9 @@ exports.getSignup = (req, res) => {
   if (req.user) {
     return res.redirect('/');
   }
-  res.render('account/signup', {
-    title: 'Create Account'
-  });
+res.render('account/signup', {
+  title: 'Create Account'
+});
 };
 
 /**
@@ -309,7 +309,7 @@ exports.postReset = (req, res, next) => {
       })
       .catch((err) => {
         if (err.message === 'self signed certificate in certificate chain') {
-          console.log('WARNING: Self signed certificate in certificate chain. Retrying with the self signed certificate. Use a valid certificate if in production.');
+          console.log('WARNING: Self signed certificate in certificate chain. Retrying with the self signed certificate. Use a valid certificate if in equipmention.');
           transporter = nodemailer.createTransport({
             service: 'SendGrid',
             auth: {
@@ -393,8 +393,8 @@ exports.postForgot = (req, res, next) => {
     });
     const mailOptions = {
       to: user.email,
-      from: 'hackathon@starter.com',
-      subject: 'Reset your password on Hackathon Starter',
+      from: 'support@firstmile.site',
+      subject: 'Reset your password on FirstMile',
       text: `You are receiving this email because you (or someone else) have requested the reset of the password for your account.\n\n
         Please click on the following link, or paste this into your browser to complete the process:\n\n
         http://${req.headers.host}/reset/${token}\n\n
@@ -406,7 +406,7 @@ exports.postForgot = (req, res, next) => {
       })
       .catch((err) => {
         if (err.message === 'self signed certificate in certificate chain') {
-          console.log('WARNING: Self signed certificate in certificate chain. Retrying with the self signed certificate. Use a valid certificate if in production.');
+          console.log('WARNING: Self signed certificate in certificate chain. Retrying with the self signed certificate. Use a valid certificate if in equipmention.');
           transporter = nodemailer.createTransport({
             service: 'SendGrid',
             auth: {

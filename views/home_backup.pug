@@ -3,7 +3,7 @@ extends layout_backup
 block content
   p.lead Peer to peer outdoor gear rentals
   hr
-  form(action='/s', method='POST')
+  form(action='/s/all', method='POST')
     input(type='hidden', name='_csrf', value=_csrf)
     .form-group.row
       label.col-md-3.col-form-label.font-weight-bold.text-right(for='name') Where
@@ -17,11 +17,15 @@ block content
       label.col-md-3.col-form-label.font-weight-bold.text-right(for='from') Return Date
       .col-md-7
         input.form-control(type='date', name='end', id='end', placeholder='mm/dd/yy', autocomplete='mm/dd/yy')
-    .form-group.row
-      label.col-md-3.col-form-label.font-weight-bold.text-right(for='category') Category
-      .col-md-7
-        select.form-control(type='select', name='category', id='category', placeholder='Kayaks', autocomplete='Kayaks')
-          option='kayaks'
+    // .form-group.row
+    //   label.col-md-3.col-form-label.font-weight-bold.text-right(for='category') Category
+    //   .col-md-7
+    //     select.form-control(type='select', name='category', id='category', placeholder='Kayaks', autocomplete='Kayaks')
+    //       option='kayaks'
+    //       option='jetskis'
+    //       option='waterskis'
+    //       option='boats'
+    //       option='snowmobiles'
     // .form-group.row
     //   label.col-md-3.col-form-label.font-weight-bold.text-right Gender
     //   .col-sm-6
